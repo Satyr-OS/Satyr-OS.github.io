@@ -1,0 +1,53 @@
+@media print{
+    body{
+      background-color: var(--bg-color);
+    }
+    header{
+      background-color: var(--frame-color);
+      color: var(--font-color);
+    }
+
+    #top-badge{
+      background-color: var(--bg-color);
+      color: var(--font-color);
+    }
+
+    main{
+      display: unset;
+      justify-content: center;
+      align-content: center;
+    }
+    .chapter{
+      background-color: var(--frame-color);
+      color: var(--font-color);
+      page-break-inside: avoid;
+    }
+
+    .entry{
+      background-color: var(--bg-color);
+      color: var(--font-color);
+      page-break-inside: avoid;
+    }
+    .info{
+      color: var(--info-color);
+    }
+
+    footer{
+      background-color: var(--frame-color);
+      color: var(--font-color);
+      border-top: 2px solid var(--bg-color);
+    }
+
+    a{
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--link-color);
+    }
+
+    [data-theme="print"]{
+      --font-color:#000;
+      --link-color: rgb(11, 35, 112, .8);
+      --bg-color:white;
+      --frame-color:white;
+      --info-color: rgb(50, 50, 50, 1.0);
+    }
