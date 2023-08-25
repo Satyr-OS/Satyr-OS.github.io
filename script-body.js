@@ -1,3 +1,11 @@
+if(document.readyState == 'loading'){
+  document.addEventListener('DOMContentLoaded', addSwitchFunc);
+}
+  else{
+    addSwitchFunc();
+  }
+
+function addSwitchFunc(){
      //This part does NOT go wherever as per S.O.!
     //Must be AFTER the checkbuton+label!!!
     //the checkbox must be encapsulated by the label to work. 
@@ -26,3 +34,4 @@
     if (document.documentElement.getAttribute("data-theme") == "dark"){
       toggleSwitch.checked = true;
     }
+}
